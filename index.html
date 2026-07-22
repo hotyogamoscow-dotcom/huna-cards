@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Huna Cards App</title>
+	<!-- Подключаем стили -->
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<div id="app">
+   	 
+    	<!-- ЭКРАН 1: ГЛАВНОЕ МЕНЮ -->
+    	<div id="home-screen" class="screen">
+        	<h1>🌺 Huna Cards 🌺</h1>
+        	<div class="menu-buttons">
+            	<button onclick="showDaily()">Карта Дня 🎲</button>
+            	<button onclick="showLibrary()">Изучать Карты 📚</button>
+        	</div>
+    	</div>
+
+    	<!-- ЭКРАН 2: ПРОСМОТР КАРТЫ (Общий для режима "Карта дня" и "Библиотека") -->
+    	<div id="card-screen" class="screen hidden">
+        	<button class="back-btn" onclick="showHome()">← Назад</button>
+       	 
+        	<div class="card">
+            	<img id="card-image" src="" alt="Card Image">
+            	<div class="card-info">
+                	<h2 id="card-name"></h2>
+                	<p id="card-translation"></p>
+               	 
+                	<div class="extra-info">
+                    	<p><strong>Использование:</strong> <span id="card-usage"></span></p>
+                    	<p><strong>Комментарий:</strong> <span id="card-comment"></span></p>
+                	</div>
+            	</div>
+        	</div>
+    	</div>
+
+    	<!-- ЭКРАН 3: МАТРИЦА (БИБЛИОТЕКА) -->
+    	<div id="library-screen" class="screen hidden">
+        	<button class="back-btn" onclick="showHome()">← Назад</button>
+        	<h1>Библиотека</h1>
+        	<div id="cards-grid" class="grid">
+            	<!-- Сюда JavaScript будет динамически вставлять 36 кнопок -->
+        	</div>
+    	</div>
+
+	</div>
+
+	<!-- Подключаем логику в самом конце, чтобы все элементы HTML уже существовали -->
+	<script src="script.js"></script>
+
+</body>
+</html>
