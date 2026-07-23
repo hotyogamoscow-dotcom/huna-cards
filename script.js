@@ -141,26 +141,49 @@ function handleNextCard() {
 }
 
 function displayCard(data) {
+   console.log("Отображаем:", data);
+   
+   // 1. Основная информация (название и перевод)
    cardName.innerText = data.name || data.title || "";
    cardTranslation.innerText = data.translation || data.sub || "";
 
+   // 2. ЛОГИКА ДЛЯ РАЗНЫХ РЕЖИМОВ
    if (currentMode === 'interpretations') {
+   	// Режим Мэтта
    	labelUsage.innerText = "Толкование Мэтта:";
    	cardUsage.innerText = data.content || "";
    	labelComment.innerText = "Комментарий:";
    	cardComment.innerText = "";
-   } else if (currentMode === 'theory') {
+   	// Скрываем блок комментария, так как в Мэтте его нет
+   	cardComment.parentElement.style.display = "none";
+   }
+   else if (currentMode === 'theory') {
+   	// Режим Теории
    	labelUsage.innerText = "Суть:";
    	cardUsage.innerText = data.content || "";
    	labelComment.innerText = "Комментарий:";
    	cardComment.innerText = "";
-   } else {
+   	// Скрываем блок комментария
+   	cardComment.parentElement.style.display = "none";
+   }
+   else {
+   	// Обычный режим (Библиотека и Карта дня)
    	labelUsage.innerText = "Использование:";
    	cardUsage.innerText = data.usage || "";
-   	labelComment.innerText = "Комментарий:";
-   	cardComment.innerText = data.comment || "";
+  	 
+   	// ПРОВЕРКА КОММЕНТАРИЯ:
+   	if (data.comment && data.comment.trim() !== "") {
+       	// Если комментарий есть — показываем блок
+       	labelComment.innerText = "Комментарий:";
+       	cardComment.innerText = data.comment;
+       	cardComment.parentElement.style.display = "block";
+   	} else {
+       	// Если комментария нет — скрываем ВЕСЬ абзац с заголовком
+       	cardComment.parentElement.style.display = "none";
+   	}
    }
 
+   // 3. Работа с фото
    if (cardImage) {
    	if (data.image) {
        	cardImage.src = data.image;
