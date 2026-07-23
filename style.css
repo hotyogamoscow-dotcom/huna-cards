@@ -1,4 +1,4 @@
-/* Базовые настройки */
+/* Базовые настройки страницы */
 body {
 	font-family: sans-serif;
 	background-color: #3bb5d2;
@@ -15,7 +15,12 @@ body {
 	box-sizing: border-box;
 }
 
-/* Управление экранами */
+/* Анимация появления экранов */
+@keyframes fadeIn {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+
 .screen {
 	display: flex;
 	flex-direction: column;
@@ -26,9 +31,17 @@ body {
 	display: none !important;
 }
 
-@keyframes fadeIn {
-	from { opacity: 0; }
-	to { opacity: 1; }
+/* Заголовки */
+.main-title {
+	text-align: center;
+	width: 100%;
+	color: #59358c;
+	margin-top: 20px;
+}
+
+.screen-title {
+	text-align: center;
+	color: #59358c;
 }
 
 /* Главное меню */
@@ -39,29 +52,88 @@ body {
 	margin-top: 50px;
 }
 
+/* Навигация (Кнопки Назад и Следующая) */
+.nav-buttons {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 10px;
+}
+
+.back-btn {
+	background-color: #5f3891; /* Фиолетовая подложка */
+	color: white;
+	padding: 5px 15px;
+	border-radius: 8px;
+	font-size: 0.9rem;
+	border: none;
+	cursor: pointer;
+}
+
+.back-btn:active {
+	background-color: #4a2b70;
+}
+
+.next-btn {
+	background-color: #5f3891;
+	color: white;
+	padding: 5px 15px;
+	border-radius: 8px;
+	font-size: 0.9rem;
+	border: none;
+	cursor: pointer;
+}
+
+.next-btn:active {
+	background-color: #4a2b70;
+}
+
 /* Карточка */
 .card {
 	background: #50c3d5;
 	border-radius: 20px;
 	overflow: hidden;
 	box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-	margin-top: 20px;
 }
 
 #card-image {
 	width: 100%;
 	aspect-ratio: 4 / 5;
 	object-fit: contain;
-	background-color: #50c3d5;
+	background-color: #f0f8ff;
+	display: block;
 }
 
-.card-info { padding: 15px; text-align: left; }
-#card-name { color: #59358c; margin: 0; font-size: 1.4rem; }
-#card-translation { font-style: italic; color: #59358c; margin-bottom: 10px; }
-.extra-info p { font-size: 0.85rem; line-height: 1.4; margin-bottom: 10px; }
-.extra-info strong { color: #59358c; display: block; }
+.card-info {
+	padding: 15px;
+	text-align: left;
+}
 
-/* Кнопки */
+#card-name {
+	color: #59358c;
+	margin: 0;
+	font-size: 1.4rem;
+	text-align: center; /* Название по центру */
+}
+
+#card-translation {
+	text-align: center; /* Значение по центру */
+	font-style: italic;
+	color: #59358c;
+	margin-bottom: 10px;
+}
+
+.extra-info p {
+	font-size: 0.85rem;
+	line-height: 1.4;
+	margin-bottom: 10px;
+}
+
+.extra-info strong {
+	color: #59358c;
+	display: block;
+}
+
+/* Кнопки в главном меню */
 button {
 	padding: 15px;
 	border-radius: 12px;
@@ -73,25 +145,21 @@ button {
 	cursor: pointer;
 }
 
-.back-btn {
-	background: none;
-	color: #6d50ff;
-	padding: 0;
-	text-align: left;
-	margin-bottom: 10px;
+button:active {
+	background-color: #4a2b70;
 }
 
-/* Сетка матрицы */
+/* Сетка (Библиотека, Теория, Мэтт) */
 .grid {
 	display: grid;
-	grid-template-columns: repeat(4, 1fr); /* 4 колонки */
+	grid-template-columns: repeat(4, 1fr);
 	gap: 10px;
 	margin-top: 20px;
 }
 
 .grid-item {
-	aspect-ratio: 1 / 1; /* Квадратная форма ячейки */
-	overflow: hidden;	/* Чтобы картинка не выходила за границы скругления */
+	aspect-ratio: 1 / 1;
+	overflow: hidden;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -99,11 +167,15 @@ button {
 	border-radius: 8px;
 	cursor: pointer;
 	box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+	font-size: 0.8rem;
 }
 
-/* Убираем лишние отступы у картинок внутри сетки */
 .grid-item img {
-	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
 
-.grid-item:active { transform: scale(0.9); }
+.grid-item:active {
+	transform: scale(0.9);
+}
