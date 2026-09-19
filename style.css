@@ -98,8 +98,8 @@ body {
 #card-image {
 	width: 100%;
 	aspect-ratio: 4 / 5;
-	object-fit: contain;
-	background-color: #f0f8ff;
+	object-fit: cover;
+	background-color: #50c3d5;
 	display: block;
 }
 
@@ -178,4 +178,34 @@ button:active {
 
 .grid-item:active {
 	transform: scale(0.9);
+}
+/* Добавляем стиль для разделителя (понадобится для второй задачи) */
+
+.divider {
+
+    height: 1px;
+
+    background-color: rgba(89, 53, 140, 0.2); /* Тонкая фиолетовая линия */
+
+    margin: 15px 0;
+
+}
+
+
+/* Стиль для текста с часом */
+
+.next-hour-info {
+
+    font-size: 0.75rem;
+
+    color: #59358c;
+
+    font-style: italic;
+
+    text-align: center;
+
+    margin-top: 5px;
+
+    opacity: 0.8;
+
 }
