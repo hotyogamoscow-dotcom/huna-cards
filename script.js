@@ -19,9 +19,9 @@ const cards = [
    { id: 18, name: "Ke Ani Niu La O Kalani", translation: "Тот, кто призовёт кружащийся свет небес", usage: "Этот символ призывает кружащийся свет с небес. Он может быть полезен перед медитацией на любом символе, использующем свет, — чтобы увеличить количество поступающего света. Его также можно использовать после, чтобы заставить свет кружиться.", image: "images/18 huna card.jpg" },
    { id: 19, name: "Ka Ahu Makali'i", translation: "Плащ света", usage: "Этот символ низводит плащ света для Кахуна, чтобы надеть его на верхнюю половину тела. Плащ света будет защищать и преображать носящего его. Он предназначен для защиты от негативных энергий, для наделения силой и инвеституры. Обычно используется на верхней половине тела, выше ног. Этот символ является изысканным защитным средством. Для самозащиты представьте символ перед собой и шагните в него.", image: "images/19 huna card.jpg" },
    { id: 20, name: "Ku I Kane", translation: "Превратиться в Кане, интегрировать и принести единство", usage: "Ku I Kane приносит единство многообразию. Он может интегрировать различные точки зрения, а также интегрировать части бессознательного ума (когда бессознательное клиента настроено на процесс и неврология готова). Внутренне он работает подобно «E hui ana na moku».", image: "images/20 huna card.jpg" },
-   { id: 21, name: "Kahekili Naue Ika Honua", translation: "Гром нисходит с небес, поражает землю и заставляет землю сотрясаться.", usage: "Этот символ является одним из проявлений Кане; как Kahekili Naue Ika Honua, Кане посылает молнию с небес, гром сотрясает землю и изгоняет всех земных духов. Этот символ полезен для очищения от низших, земных энергий. Используйте его в медитации для выдувания негативных эмоций, таких как печаль, замешательство или даже просто застой. Это хороший символ для использования в начале, поскольку он изгоняет стихию земли и связанные с ней энергии. В начале он очищает систему, поскольку некоторые символы слишком хрупки для использования вначале.", image: "images/21 huna card.jpg" },
+   { id: 21, name: "Kahekili Naue Ika Honua", translation: "Гром нисходит с небес, поражает землю и заставляет землю сотрясаться.", usage: "Этот символ является одним из проявлений Кане; и как Kahekili Naue Ika Honua, Кане посылает молнию с небес, гром сотрясает землю и изгоняет всех земных духов. Этот символ полезен для очищения от низших, земных энергий. Используйте его в медитации для выдувания негативных эмоций, таких как печаль, замешательство или даже просто застой. Это хороший символ для использования в начале, поскольку он изгоняет стихию земли и связанные с ней энергии. В начале он очищает систему, поскольку некоторые символы слишком хрупки для использования вначале.", image: "images/21 huna card.jpg" },
    { id: 22, name: "Pu Nohu Ula I Ke Kai", translation: "Красный туман духа, поднимающийся и входящий в тело, приносящий высшее видение.", usage: "Этот символ заставляет великий красный туман духа подниматься и входить в тело. Он может принести высшее видение.", image: "images/22 huna card.jpg" },
-   { id: 23, name: "Ka Ohu I Uka", translation: "Послать свет, поднимающийся вверх и заставляющий его гудеть", usage: "Этот символ направляет свет, поднимающийся вверх, подобно тому, как свет в огне иногда вздымается вверх. Ka Ohu I Uka направляет свет и энергию вверх. Как и огонь, он может быть довольно тёплым. В медитации этот символ используется вместе с Ke Ahi A Loa (#17), чтобы зажечь Иму в теле.", image: "images/23 huna card.jpg" },
+   { id: 23, name: "Ka Ohu I Uka", translation: "Послать свет, поднимающийся вверх и заставляющий его гудеть", usage: "Этот символ направляет свет, поднимающийся вверх, подобно тому, как свет в огне иногда вздымается вверх. Ka Ohu I Uka направляет свет и энергию вверх. Как и огонь, он может быть довольно тёплым. В медитации этот символ используется вместе с Ke Ahi A Loa (№17), чтобы зажечь Иму в теле.", image: "images/23 huna card.jpg" },
    { id: 24, name: "Ke Ahi A Loa", translation: "Призвать огонь, создать сеть, расширить её и сделать постоянной", usage: "Иму находится в Калуа Ка Инайна, что примерно позади и ниже пупка, на верхней части и в центре тазовой кости. Это котёл алхимиков, и Ke Ahi A Loa зажигает Иму и посылает пламя, устремляющееся вверх. Как и огонь, он тоже может быть тёплым, и он согревает всё внутреннее ядро тела.", image: "images/24 huna card.jpg" },
    { id: 25, name: "Ke Ao Mau Loa", translation: "Продлить навечно, свет и любовь", usage: "Этот символ очень полезен для продления эффектов любого из предыдущих символов.", image: "images/25 huna card.jpg" },
    { id: 26, name: "Ka Opua Kiei", translation: "Расширить видение (света во время медитации)", usage: "Этот символ расширяет видение света во время медитации. Используйте его, чтобы расширить видение, чтобы вы могли лучше видеть свет в медитации.", image: "images/26 huna card.jpg" },
@@ -29,7 +29,7 @@ const cards = [
    { id: 28, name: "Ka Opua Nana", translation: "Приносить спокойствие (в медитации) с помощью света", usage: "Этот символ завершает то, что мы начали, и приносит спокойствие посредством света.", image: "images/28 huna card.jpg" },
    { id: 29, name: "Papa Uli", translation: "Соединиться с богиней", usage: "Позволяет пережить прямую связь с богиней Ули.", image: "images/29 huna card.jpg" },
    { id: 30, name: "Kaohu Kolo Mai", translation: "Заставить свет изливаться и выходить к передней части головы", usage: "Этот символ оказывает действие, сходное с песнопением No Luna E Kahale Kai, которое предназначено для поднятия света к передней части головы. Символ выводит все беспокоящие энергии и растворяет их в свете.", image: "images/30 huna card.jpg" },
-   { id: 31, name: "Moe Ke Hau", translation: "Спать на нежном ветерке", usage: "Время сновидений — это функция стихии воздуха; и в успешном сне считается, что сновидец спит на ветру. Это символ времени сновидений — позвольте символу делать вас легче и легче, поднимать вас на ветру и уносить на время сновидений.", image: "images/31 huna card.jpg" },
+   { id: 31, name: "Moe Ke Hau", translation: "Спать на нежном ветерке", usage: "Время сновидений — это функция стихии воздуха; и в успешном сне считается, что сновидец спит на ветру. Это символ времени сновидений — позвольте символу делать вас легче и легче, поднимать вас на ветру и уносить в время сновидений.", image: "images/31 huna card.jpg" },
    { id: 32, name: "Ho'o Lono", translation: "Вызывать послушание", usage: "Ho‘o Lono означает слушать, повиноваться. При медитации на 5-й чакре он даёт говорящему силу повеления — способность делать свой голос законом во вселенной. Когда этот символ используется в медитации, он также может соединять с целью жизни. С этим приходит ответственность — следите за тем, что вы говорите.", image: "images/32 huna card.jpg" },
    { id: 33, name: "Lua Lai Lua", translation: "Рассеивать сверкающий свет по телу", usage: "Этот символ наиболее эффективен для наполнения тела светом во время медитации, трансформируя неврологию.", image: "images/33 huna card.jpg" },
    { id: 34, name: "Ho Kaoiliili", translation: "Увеличить царственность (величие)", usage: "Нет уважения? Медитируйте на Ho Kaoiliili.", image: "images/34 huna card.jpg" },
@@ -37,6 +37,7 @@ const cards = [
    { id: 36, name: "Ho'o Hiki Lele", translation: "Сделать возможным полет", usage: "И когда всё сделано, куда мы направляемся? Мы возвращаемся к свету. Последний символ посылает неврологии сообщение: «Это возможно! Стань легче, начни подниматься. Скоро ты полетишь!» Скоро!", image: "images/36 huna card.jpg" }
 ];
 
+// 2. ТЕОРИЯ (Шаблон)
 const theoryData = [
 	{
     	id: 1,
@@ -181,7 +182,6 @@ const interpretationsData = cards.map(card => ({
 	content: `Текст толкования Мэтта для карты ${card.name}. Здесь будет подробное объяснение...`
 }));
 
-
 // 4. ССЫЛКИ НА ЭЛЕМЕНТЫ
 const screens = {
    home: document.getElementById('home-screen'),
@@ -202,10 +202,6 @@ const interpretationsGrid = document.getElementById('interpretations-grid');
 const labelUsage = document.getElementById('label-usage');
 const labelComment = document.getElementById('label-comment');
 const nextCardBtn = document.getElementById('next-card-btn');
-
-// НОВЫЕ ЭЛЕМЕНТЫ: Ссылки на разделитель и час
-const timeDivider = document.getElementById('time-divider');
-const nextHourDisplay = document.getElementById('next-hour-display');
 
 let currentMode = 'library';
 let currentList = [];
@@ -273,27 +269,15 @@ function handleNextCard() {
 }
 
 function displayCard(data) {
+   console.log("Отображаем:", data);
+   
    // 1. Основная информация
    cardName.innerText = data.name || data.title || "";
    cardTranslation.innerText = data.translation || data.sub || "";
 
-   // --- ЛОГИКА ВРЕМЕНИ (Для Карты Дня) ---
-   if (currentMode === 'daily') {
-       const now = new Date();
-       const nextHour = new Date(now.getFullYear(), now.getMonth(), now.getDate(), now.getHours() + 1);
-       const hours = nextHour.getHours().toString().padStart(2, '0');
-       const minutes = nextHour.getMinutes().toString().padStart(2, '0');
-       
-       nextHourDisplay.innerText = `Следующий час: ${hours}:${minutes}`;
-       timeDivider.classList.remove('hidden');
-       nextHourDisplay.classList.remove('hidden');
-   } else {
-       timeDivider.classList.add('hidden');
-       nextHourDisplay.classList.add('hidden');
-   }
-
    // 2. ЛОГИКА РАЗНЫХ РЕЖИМОВ
    if (currentMode === 'interpretations') {
+   	// РЕЖИМ МЭТТА
    	labelUsage.innerText = "Толкование Мэтта:";
    	cardUsage.innerText = data.content || "";
    	labelComment.innerText = "Комментарий:";
@@ -301,13 +285,27 @@ function displayCard(data) {
    	cardComment.parentElement.style.display = "none";
    }
    else if (currentMode === 'theory') {
-   	labelUsage.innerText = ""; 
+   	// РЕЖИМ ТЕОРИИ (Ваша правка здесь!)
+   	labelUsage.innerText = ""; // Убираем слово "Суть:"
    	cardUsage.innerText = data.content || "";
+  	 
+   	// Скрываем блок комментария полностью
    	labelComment.innerText = "";
    	cardComment.innerText = "";
    	cardComment.parentElement.style.display = "none";
+
+   	// ВАЖНО: Если вы хотите убрать подзаголовок (sub),
+   	// нам нужно, чтобы он не отображался.
+   	// В нашей структуре подзаголовок отображается в cardTranslation.
+   	// Чтобы убрать его в теории, мы сделаем проверку ниже.
+   	if (data.sub && data.sub === data.translation) {
+       	// Если подзаголовок совпадает с переводом (как в шаблоне),
+       	// мы можем его скрыть, но лучше просто оставить cardTranslation пустым
+       	// если вы хотите, чтобы под заголовком было пусто.
+   	}
    }
    else {
+   	// ОБЫЧНЫЙ РЕЖИМ (Библиотека / Карта дня)
    	labelUsage.innerText = "Использование:";
    	cardUsage.innerText = data.usage || "";
    	labelComment.innerText = "Комментарий:";
@@ -336,13 +334,13 @@ function generateGrid(dataSource, gridElement, mode) {
        	img.src = item.image;
        	div.appendChild(img);
    	} else {
-   	    div.innerText = item.id;
+       	div.innerText = item.id;
    	}
    	div.onclick = () => {
-   	    displayCard(item);
-   	    hideAllScreens();
-   	    screens.card.classList.remove('hidden');
-   	    nextCardBtn.style.display = "block";
+       	displayCard(item);
+       	hideAllScreens();
+       	screens.card.classList.remove('hidden');
+       	nextCardBtn.style.display = "block";
    	};
    	gridElement.appendChild(div);
    });
