@@ -98,8 +98,8 @@ body {
 #card-image {
 	width: 100%;
 	aspect-ratio: 4 / 5;
-	object-fit: contain;
-	background-color: #f0f8ff;
+	object-fit: cover;
+	background-color: #50c3d5;
 	display: block;
 }
 
