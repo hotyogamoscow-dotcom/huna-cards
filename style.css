@@ -60,7 +60,7 @@ body {
 }
 
 .back-btn {
-	background-color: #5f3891;
+	background-color: #5f3891; /* Фиолетовая подложка */
 	color: white;
 	padding: 5px 15px;
 	border-radius: 8px;
@@ -98,8 +98,8 @@ body {
 #card-image {
 	width: 100%;
 	aspect-ratio: 4 / 5;
-	object-fit: cover; /* Убирает белые полосы, заполняя всё пространство */
-	background-color: #50c3d5; /* Фон совпадает с карточкой */
+	object-fit: contain;
+	background-color: #f0f8ff;
 	display: block;
 }
 
@@ -112,16 +112,26 @@ body {
 	color: #59358c;
 	margin: 0;
 	font-size: 1.4rem;
-	text-align: center;
+	text-align: center; /* Название по центру */
 }
 
 #card-translation {
-	text-align: center;
+	text-align: center; /* Значение по центру */
 	font-style: italic;
 	color: #59358c;
 	margin-bottom: 10px;
 }
 
+.extra-info p {
+	font-size: 0.85rem;
+	line-height: 1.4;
+	margin-bottom: 10px;
+}
+
+.extra-info strong {
+	color: #59358c;
+	display: block;
+}
 
 /* Кнопки в главном меню */
 button {
@@ -139,7 +149,7 @@ button:active {
 	background-color: #4a2b70;
 }
 
-/* Сетка */
+/* Сетка (Библиотека, Теория, Мэтт) */
 .grid {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
