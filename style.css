@@ -122,22 +122,6 @@ body {
 	margin-bottom: 10px;
 }
 
-/* СТИЛИ ДЛЯ НОВОГО БЛОКА (РАЗДЕЛИТЕЛЬ И ЧАС) */
-.divider {
-	height: 1px;
-	background-color: rgba(89, 53, 140, 0.2);
-	margin: 15px 0;
-}
-
-.next-hour-info {
-	font-size: 0.75rem;
-	color: #59358c;
-	font-style: italic;
-	text-align: center;
-	margin-bottom: 15px;
-	opacity: 0.8;
-}
-
 .extra-info p {
 	font-size: 0.85rem;
 	line-height: 1.4;
