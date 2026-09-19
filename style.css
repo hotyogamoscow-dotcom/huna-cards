@@ -122,16 +122,6 @@ body {
 	margin-bottom: 10px;
 }
 
-.extra-info p {
-	font-size: 0.85rem;
-	line-height: 1.4;
-	margin-bottom: 10px;
-}
-
-.extra-info strong {
-	color: #59358c;
-	display: block;
-}
 
 /* Кнопки в главном меню */
 button {
